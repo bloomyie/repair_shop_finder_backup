@@ -3,6 +3,9 @@
 import os
 import sys
 
+from repair_shop_finder.wsgi import application
+app = application
+
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'repair_shop_finder.settings')
