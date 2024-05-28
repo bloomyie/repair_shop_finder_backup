@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Repair Shops</title>
+    <style>
+        .search-form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+        .search-form label,
+        .search-form input {
+            margin: 5px;
+        }
+        .search-results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>List of Repair Shops</h1>
+    <form method="GET" action="." class="search-form">
+        <label for="make">Make:</label>
+        <input type="text" id="make" name="make" value="{{ make }}">
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" value="{{ category }}">
+        <label for="zip_code">Zip Code:</label>
+        <input type="text" id="zip_code" name="zip_code" value="{{ zip_code }}">
+        <input type="submit" value="Search">
+    </form>
+    <div class="search-results">
+        <ul>
+            {% for shop in shops %}
+            <li>
+                <strong>{{ shop.name }}</strong><br>
+                Address: {{ shop.formatted_address }}<br>
+                Phone: {{ shop.phone_number }}<br>
+                Website: <a href="{{ shop.website }}">{{ shop.website }}</a><br>
+                Rating: {{ shop.rating }}<br>
+                Total Reviews: {{ shop.user_ratings_total }}<br>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

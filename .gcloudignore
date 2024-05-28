@@ -1,0 +1,10 @@
+runtime: python39
+
+entrypoint: python manage.py runserver
+
+env_variables:
+  DJANGO_SETTINGS_MODULE: "repair_shop_finder.settings"
+
+handlers:
+- url: /.*
+  script: auto

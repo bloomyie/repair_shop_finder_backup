@@ -1,0 +1,170 @@
+DEBUG:root:Query URL: https://maps.googleapis.com/maps/api/place/textsearch/json?query=asian+repair+shop+near+89406&radius=80467.0&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/textsearch/json?query=asian+repair+shop+near+89406&radius=80467.0&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 40412
+DEBUG:root:Results Count: 20
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ27aWMiSHmIAR0LYnaMFziHo&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 19309
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJYaTZtNWGmIARsp3qPXn1-fY&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18166
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/textsearch/json?pagetoken=AUGGfZluxzovvAoBAV_tum5cr9Lwj9RNBBARcuDV7Lo_Xc2C9ylYUzlGsKOd1t1K6joLHM-CmIKq1sTBz___9CroW9b-XMWYQbyYtlr95fs15ySChstb-qvYSN-DFOdZMyJ6JfmI3qCdSOeQoNxyrzOxlJENAms0L4rSKH2OnPKAa4rC2rzmEGdYfoLfzjl5tg8dhZhTPo_fVxn0KFCVnjd_QwK11c_n5xkdjIi-NQEoLmLCMEFN-YmI1Bizeh4XYGvC7upLe74bJu3JhhuweS-jNbUtkfbjn6nWOKoN7X-Ts0RRI8ig0U0Lnx_ZTaXHYFhxwNGGk099Rhz6dF5Uj2zpyoJkqzyEYov9fJ-JCuybG0IoIIU2OpW5vUZjyziuTU02UJrND5acJiKWL45lgLmBHktmravDB1VlaMk&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 21276
+DEBUG:root:Results Count: 10
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJbQRFOteGmIARt53UY_stPqg&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18065
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJiQkiQYbRyIARvqFaUg6Iapg&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18173
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ7evCFTHGyIARmKZNAAFE4c4&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 19242
+DEBUG:root:Query URL: https://maps.googleapis.com/maps/api/place/textsearch/json?query=domestic+repair+shop+near+89406&radius=80467.0&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/textsearch/json?query=domestic+repair+shop+near+89406&radius=80467.0&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 15369
+DEBUG:root:Results Count: 8
+DEBUG:root:Query URL: https://maps.googleapis.com/maps/api/place/textsearch/json?query=asian+repair+shop+near+89406&radius=80467.0&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/textsearch/json?query=asian+repair+shop+near+89406&radius=80467.0&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 40412
+DEBUG:root:Results Count: 20
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ27aWMiSHmIAR0LYnaMFziHo&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 19309
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJYaTZtNWGmIARsp3qPXn1-fY&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18166
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/textsearch/json?pagetoken=AUGGfZkI3z4N_YNRF3_piRQRm7oyjb_c1f5_XNbUvak70MMAVNmd7C67Dpz_SQ2xRAVsJZsAWETVnWLvVYUXu3eJYFIpKxmTI9Ns5oacDZRb1IIoL5qzBHMHLleP18JVPW80fHx8BhR2C0S3qnJs4vGBLabQbfAx7fzXFrYnKgq3rVcdVfWmLsoMXjGHZSxiILlV_KP1t_j5Pi8z2ZIo0RhjYmNwlHlvpC6tjDOlFbeexHto57Wtp40xumVD4l6rqQ5cjABRDqM4WY1aHt5NJdZKSEFZv4szAyxrYAxJ2QUVra6JVnn3YGnuVvXPeTNQUXSNaxw5sHKGXIP7KXTywFoi-VPAWa_obOPjx0X0Sn0yLTlN5TPF7mm9C2G4ygW65D56pDwrZbaGdMWhPA26rv4PGlP3MQqvoVzQKGY&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 21276
+DEBUG:root:Results Count: 10
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJbQRFOteGmIARt53UY_stPqg&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18065
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJiQkiQYbRyIARvqFaUg6Iapg&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18173
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ7evCFTHGyIARmKZNAAFE4c4&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 19242
+INFO:django.utils.autoreload:C:\Users\bloom\OneDrive\Desktop\repair_shop_finder\shops\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\bloom\OneDrive\Desktop\repair_shop_finder\shops\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\bloom\OneDrive\Desktop\repair_shop_finder\shops\views.py changed, reloading.
+WARNING:django.request:Not Found: /shops/
+DEBUG:root:Query URL: https://maps.googleapis.com/maps/api/place/textsearch/json?query=asian+repair+shop+near+89406&radius=48280.2&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/textsearch/json?query=asian+repair+shop+near+89406&radius=48280.2&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 40305
+DEBUG:root:Results Count: 20
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJiQkiQYbRyIARvqFaUg6Iapg&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18175
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ5cRIfk6PmIARVHinf-2jTck&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 17319
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ7evCFTHGyIARmKZNAAFE4c4&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 19244
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ1eTdLdeGmIARrWnoIYMsa3Y&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 11159
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJvfNj2qqImIAR6HK59jm3xHo&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 16685
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJq-TvraW_yIARFoAvfFEm4ho&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 17895
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJCXQ38CSHmIARgxPtWRQ7C3w&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18479
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ27aWMiSHmIAR0LYnaMFziHo&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 19311
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJK-YptMCHmIARuskrv9tk3d8&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18435
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJLbVHSeaGmIARAc6o4U1lTyo&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 21630
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJoxOKz6c_mYARuWaHFEZeYb8&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 16077
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/textsearch/json?pagetoken=AUGGfZkeNUFUA20zza-hE64Oh9PiB5I4vIHVlziaVj9JXXzg-m-ZplQB3wl6T74ULZrE8Vgjor6jP7TmheRULrAiAQPGWToCnRKb4OGpTdk5j0UzohWAbz2GXZhu7MB_8qW24R9bFM_VFz_ek6ASmkGS7lzvf8JulfDaIhnLVqaHj6Xyc2L5KphpVKRowjD6Rtl2sOED9JHzuHb2YWx6L7lTkvw7XiLg19fPK5pLLvWT3hlyIYY0mLzt8cH_YGBRMyHa_uM6YNM8dbN81RHD8YsW3L83_Cy7XcOUAA3krHWgMrYFDz2Ui2Q6h1llKC-HVIf_w9kNitwFkz5f3rqHMl49k-yFbUD9XDpPUQuQ1fkIaIaI1DW_qm54Y5qyzfuwDUBog9dc7vmPUHNDXMkohsx2onrZ7yav5GQKW70&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 25541
+DEBUG:root:Results Count: 12
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJPTKXDe-GmIAR8O5zZGZJg90&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 23199
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ56x7FheAmIARsB2IAAD_Yn4&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18060
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJYaTZtNWGmIARsp3qPXn1-fY&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18168
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJbQRFOteGmIARt53UY_stPqg&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18065
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJF-kiTu-GmIARY4ad226c2LE&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18071
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJBdbmBoCAmIARgBLz_bz5ZsM&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 12339
+DEBUG:root:Query URL: https://maps.googleapis.com/maps/api/place/textsearch/json?query=asian+repair+shop+near+89406&radius=48280.2&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/textsearch/json?query=asian+repair+shop+near+89406&radius=48280.2&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 40305
+DEBUG:root:Results Count: 20
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJiQkiQYbRyIARvqFaUg6Iapg&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18175
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ5cRIfk6PmIARVHinf-2jTck&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 17319
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ7evCFTHGyIARmKZNAAFE4c4&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 19244
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ1eTdLdeGmIARrWnoIYMsa3Y&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 11159
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJvfNj2qqImIAR6HK59jm3xHo&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 16685
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJq-TvraW_yIARFoAvfFEm4ho&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 17895
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJCXQ38CSHmIARgxPtWRQ7C3w&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18479
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ27aWMiSHmIAR0LYnaMFziHo&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 19311
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJK-YptMCHmIARuskrv9tk3d8&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18435
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJLbVHSeaGmIARAc6o4U1lTyo&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 21630
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJoxOKz6c_mYARuWaHFEZeYb8&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 16077
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/textsearch/json?pagetoken=AUGGfZmy5oeJgbHET3tqkIGgH8N-vFxJLBw9Bj5sovs54ZGWUAMhUkHxo6HDq2VWvQzpPU1jV1HHD6yGDUe15LPEbKKKqUfbYBv_AXEzI-Lf9Pic6jaATgCfqXgayJ5gIRPAA_v4ymWPKalMS5fMJextV1N1VHQjMIB9fvrq_RedjcXvK1rr4dLiG73R9EIAzUYG56jjHPP_W0rnSKNzq1OIt87Pd1ba6CYol2AO9L5ivHcXubIzniCMTARY5x6zUGVTXIwHNZ3aXhMl55eiv0ocb4GN_uKYDqc9yxu8LL_W3MyTkE9l_IUt7R3LiSThnr0laGFjsJ_iBdWcC8bFRvuTPpnYPrRh-sdUrMjV1nKCC4IA2TuQaapVkJtFjOf3tW4pBVmgIlrxYolYc78HZxqD4QzNMCMk-Uh6SX4&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 25541
+DEBUG:root:Results Count: 12
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJPTKXDe-GmIAR8O5zZGZJg90&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 23199
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ56x7FheAmIARsB2IAAD_Yn4&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18060
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJYaTZtNWGmIARsp3qPXn1-fY&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18168
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJbQRFOteGmIARt53UY_stPqg&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18065
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJF-kiTu-GmIARY4ad226c2LE&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18071
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJBdbmBoCAmIARgBLz_bz5ZsM&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 12339
+INFO:django.utils.autoreload:C:\Users\bloom\OneDrive\Desktop\repair_shop_finder\shops\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\bloom\OneDrive\Desktop\repair_shop_finder\shops\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\bloom\OneDrive\Desktop\repair_shop_finder\shops\views.py changed, reloading.
+DEBUG:root:Search Query: asian, Zip Code: 89406
+DEBUG:root:Query URL: https://maps.googleapis.com/maps/api/place/textsearch/json?query=asian+repair+shop+near+89406&radius=48280.2&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/textsearch/json?query=asian+repair+shop+near+89406&radius=48280.2&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 40276
+DEBUG:root:Results Count: 20
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJiQkiQYbRyIARvqFaUg6Iapg&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18175
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ5cRIfk6PmIARVHinf-2jTck&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 17319
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ7evCFTHGyIARmKZNAAFE4c4&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 19244
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ1eTdLdeGmIARrWnoIYMsa3Y&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 11159
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJq-TvraW_yIARFoAvfFEm4ho&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 17895
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJCXQ38CSHmIARgxPtWRQ7C3w&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18479
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ27aWMiSHmIAR0LYnaMFziHo&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 19311
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJK-YptMCHmIARuskrv9tk3d8&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18435
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJoxOKz6c_mYARuWaHFEZeYb8&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 16077
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJPTKXDe-GmIAR8O5zZGZJg90&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 23199
+DEBUG:root:Next Page Token: AUGGfZl4XiVWn55NwEIZKSOapr0Lt-psgEArlgZ0Xx-91yckAqxRBh3IikiiSuB--ndFu22m9wiGgdMsGTOI8vP72PTJ-4cSGMAPxHFOcXoP5FMKz5aHqhd2XBMoEBGvb1Q19iDSpFn9ZmY83s_ri1BmRX_17-4hCiuCZi4sSm3pJ3YGgNzfK3QEgjd0921MEFumbE4YRXFY7IP1V2zhobx7fXpiAyddxXErEEdGKQWka2O_KGFMiM45X3BPLMwxarFlm_p0-wGfpBbevkZkCLMR9Z8DR8eiHkBtieeXSfA26Dfb1_g6bslNfl8X1pIIigyiNBsNmYmIKOgOEKnxap2p6eKPDjuG_S8zKSmDUO5D1aRlwCo7PcQ-l-fpDeQZ2QWKErcYpQ0TRNj7oFF8dLPjFg-566d2-tDqkcs
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/textsearch/json?pagetoken=AUGGfZl4XiVWn55NwEIZKSOapr0Lt-psgEArlgZ0Xx-91yckAqxRBh3IikiiSuB--ndFu22m9wiGgdMsGTOI8vP72PTJ-4cSGMAPxHFOcXoP5FMKz5aHqhd2XBMoEBGvb1Q19iDSpFn9ZmY83s_ri1BmRX_17-4hCiuCZi4sSm3pJ3YGgNzfK3QEgjd0921MEFumbE4YRXFY7IP1V2zhobx7fXpiAyddxXErEEdGKQWka2O_KGFMiM45X3BPLMwxarFlm_p0-wGfpBbevkZkCLMR9Z8DR8eiHkBtieeXSfA26Dfb1_g6bslNfl8X1pIIigyiNBsNmYmIKOgOEKnxap2p6eKPDjuG_S8zKSmDUO5D1aRlwCo7PcQ-l-fpDeQZ2QWKErcYpQ0TRNj7oFF8dLPjFg-566d2-tDqkcs&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 21387
+DEBUG:root:Results Count: 10
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJ56x7FheAmIARsB2IAAD_Yn4&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18060
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJYaTZtNWGmIARsp3qPXn1-fY&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18168
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJbQRFOteGmIARt53UY_stPqg&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18065
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJF-kiTu-GmIARY4ad226c2LE&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 18071
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): maps.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://maps.googleapis.com:443 "GET /maps/api/place/details/json?placeid=ChIJBdbmBoCAmIARgBLz_bz5ZsM&key=AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY HTTP/1.1" 200 12339
+INFO:django.utils.autoreload:C:\Users\bloom\OneDrive\Desktop\repair_shop_finder\shops\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\bloom\OneDrive\Desktop\repair_shop_finder\shops\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\bloom\OneDrive\Desktop\repair_shop_finder\shops\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\bloom\OneDrive\Desktop\repair_shop_finder\shops\views.py changed, reloading.
