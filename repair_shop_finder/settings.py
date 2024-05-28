@@ -7,7 +7,12 @@ SECRET_KEY = 'django-insecure-412f3j+3_&+n1qlk9h$y7u4i9u4ex#%2@b@z&h!b5e&(p2h%'
 DEBUG = False  # Set to False for production
 
 # Update this line with actual deployment server address and localhost for testing
-ALLOWED_HOSTS = ['shopfinder-424119.wn.r.appspot.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [
+    'shopfinder-424119.wn.r.appspot.com',
+    '127.0.0.1',
+    'localhost',
+    'repair-shop-finder-gefipkxmi-hartley-bloomfields-projects.vercel.app'  # Added domain
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
