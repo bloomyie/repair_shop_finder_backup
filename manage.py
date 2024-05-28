@@ -18,9 +18,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# Adding the handler function for Vercel
-from repair_shop_finder.wsgi import application
-
-def handler(event, context):
-    return application(event, context)
