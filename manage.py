@@ -1,10 +1,7 @@
-# manage.py
+#!/usr/bin/env python
+"""Django's command-line utility for administrative tasks."""
 import os
 import sys
-from django.core.wsgi import get_wsgi_application
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'repair_shop_finder.settings')
-application = get_wsgi_application()
 
 def main():
     """Run administrative tasks."""
@@ -21,3 +18,9 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# Adding the handler function for Vercel
+from repair_shop_finder.wsgi import application
+
+def handler(event, context):
+    return application(event, context)
