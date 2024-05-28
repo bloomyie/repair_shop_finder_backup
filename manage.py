@@ -1,8 +1,10 @@
-#!/usr/bin/env python
-"""Django's command-line utility for administrative tasks."""
+# manage.py
 import os
 import sys
+from django.core.wsgi import get_wsgi_application
 
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'repair_shop_finder.settings')
+application = get_wsgi_application()
 
 def main():
     """Run administrative tasks."""
@@ -17,12 +19,5 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
-
 if __name__ == '__main__':
-    from django.core.wsgi import get_wsgi_application
-
-    # Check if running on Vercel
-    if os.environ.get('VERCEL') == '1':
-        app = get_wsgi_application()
-    else:
-        main()
+    main()
