@@ -19,14 +19,10 @@ def main():
 
 
 if __name__ == '__main__':
-    import os
-    from django.core.management import execute_from_command_line
-    import sys
+    from django.core.wsgi import get_wsgi_application
 
-    if 'GAE_ENV' in os.environ:
-        from waitress import serve
-        from repair_shop_finder.wsgi import application
-
-        serve(application, host='0.0.0.0', port=os.environ.get('PORT', 8080))
+    # Check if running on Vercel
+    if os.environ.get('VERCEL') == '1':
+        app = get_wsgi_application()
     else:
-        execute_from_command_line(sys.argv)
+        main()
