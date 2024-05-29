@@ -1,5 +1,4 @@
 from pathlib import Path
-import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -7,8 +6,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-412f3j+3_&+n1qlk9h$y7u4i9u4ex#%2@b@z&h!b5e&(p2h%'
 DEBUG = False  # Set to False for production
 
-# Fetch allowed hosts from environment variable
-ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', '127.0.0.1,localhost').split(',')
+# Update this line with actual deployment server address and localhost for testing
+ALLOWED_HOSTS = [
+    'repair-shop-finder-9h3w7ywan-hartley-bloomfields-projects.vercel.app', 
+    'repair-shop-finder-dgdw7id3d-hartley-bloomfields-projects.vercel.app', 
+    'repair-shop-finder-3epd99xj2-hartley-bloomfields-projects.vercel.app', 
+    '127.0.0.1', 
+    'localhost'
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -69,7 +74,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
+    }
 ]
 
 LANGUAGE_CODE = 'en-us'
@@ -83,3 +88,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+els.BigAutoField'
