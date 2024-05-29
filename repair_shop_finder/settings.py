@@ -2,12 +2,17 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Use this generated secret key
 SECRET_KEY = 'django-insecure-412f3j+3_&+n1qlk9h$y7u4i9u4ex#%2@b@z&h!b5e&(p2h%'
 DEBUG = True  # Set to True for local development
 
+# Update this line with actual deployment server address and localhost for testing
 ALLOWED_HOSTS = [
-    '127.0.0.1', 
-    'localhost'
+    '127.0.0.1',
+    'localhost',
+    'repair-shop-finder-gefipkxmi-hartley-bloomfields-projects.vercel.app',
+    'repair-shop-finder-jtvysirea-hartley-bloomfields-projects.vercel.app',
+    'shopfinder-424119.wn.r.appspot.com'
 ]
 
 INSTALLED_APPS = [
@@ -30,12 +35,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'repair_shop_finder.urls'  # Ensure this is correctly set
+ROOT_URLCONF = 'repair_shop_finder.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],  # Adjust if your templates are elsewhere
+        'DIRS': [BASE_DIR / 'templates'],  # Adjusted for clarity, modify if your templates are elsewhere
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
