@@ -5,7 +5,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'pgTgmKarcuHaWo-fMdaYhbbuhz91OKtcQ_72tqdKz-enO5qXP-aVM8uaQOq3LPDFhnU'
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['shopfinder-424119.wn.r.appspot.com', 'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
