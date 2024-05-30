@@ -1,19 +1,11 @@
-from pathlib import Path
+import os
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Use this generated secret key
-SECRET_KEY = 'django-insecure-412f3j+3_&+n1qlk9h$y7u4i9u4ex#%2@b@z&h!b5e&(p2h%'
-DEBUG = True  # Set to True for local development
+SECRET_KEY = 'pgTgmKarcuHaWo-fMdaYhbbuhz91OKtcQ_72tqdKz-enO5qXP-aVM8uaQOq3LPDFhnU'
+DEBUG = True
 
-# Update this line with actual deployment server address and localhost for testing
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-    'repair-shop-finder-gefipkxmi-hartley-bloomfields-projects.vercel.app',
-    'repair-shop-finder-jtvysirea-hartley-bloomfields-projects.vercel.app',
-    'shopfinder-424119.wn.r.appspot.com'
-]
+ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -22,7 +14,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'shops',  # Assuming 'shops' is your app, ensure it's created and configured
+    'shops',
 ]
 
 MIDDLEWARE = [
@@ -40,7 +32,7 @@ ROOT_URLCONF = 'repair_shop_finder.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],  # Adjusted for clarity, modify if your templates are elsewhere
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -58,7 +50,7 @@ WSGI_APPLICATION = 'repair_shop_finder.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -83,8 +75,8 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+USE_L10N = True
+
 USE_TZ = True
 
 STATIC_URL = '/static/'
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

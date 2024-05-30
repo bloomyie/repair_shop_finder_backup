@@ -1,8 +1,9 @@
-from django.shortcuts import render
 import requests
+from django.shortcuts import render
 import time
 
-API_KEY = 'AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY'
+API_KEY = API_KEY = 'AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY'
+  # Ensure this is the correct API key
 SEARCH_RADIUS = 50 * 1609.34  # 50 miles to meters
 MIN_RATING = 4.3
 MIN_REVIEWS = 30
@@ -10,11 +11,12 @@ MIN_REVIEWS = 30
 def get_repair_shops(search_query, zip_code):
     url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={search_query}+repair+shop+near+{zip_code}&radius={SEARCH_RADIUS}&key={API_KEY}"
     shops = []
-
+    
     while url:
         response = requests.get(url)
         result = response.json()
-        for shop in result['results']:
+        
+        for shop in result.get('results', []):
             if shop.get('rating', 0) >= MIN_RATING and shop.get('user_ratings_total', 0) > MIN_REVIEWS:
                 place_id = shop['place_id']
                 details_url = f"https://maps.googleapis.com/maps/api/place/details/json?placeid={place_id}&key={API_KEY}"
@@ -25,10 +27,13 @@ def get_repair_shops(search_query, zip_code):
                 shop['phone_number'] = phone_number
                 shop['website'] = website
                 shops.append(shop)
+        
         url = None
         if 'next_page_token' in result:
             url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?pagetoken={result['next_page_token']}&key={API_KEY}"
             time.sleep(2)  # Delay to allow the next_page_token to become valid
+    
+    print(f"Shops found: {shops}")
     return shops
 
 def shop_list(request):
