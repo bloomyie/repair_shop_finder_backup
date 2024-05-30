@@ -39,7 +39,7 @@ def get_repair_shops(search_query, zip_code):
 def shop_list(request):
     make = request.GET.get('make', '')  # Default to empty string if no make is provided
     category = request.GET.get('category', '')  # Default to empty string if no category is provided
-    zip_code = request.GET.get('zip_code', '36301')  # Default to '36301'
+    zip_code = request.GET.get('zip_code', '')  # Default to '36301'
     search_query = f"{make} {category}".strip()
     shops = get_repair_shops(search_query, zip_code)
     return render(request, 'shops/shop_list.html', {'shops': shops, 'make': make, 'category': category, 'zip_code': zip_code})
