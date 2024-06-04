@@ -1,14 +1,20 @@
 from django.shortcuts import render
 import requests
 import time
+import re
 
 API_KEY = 'AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY'  # Ensure your correct API key is here
 SEARCH_RADIUS = 50 * 1609.34  # 50 miles to meters
 MIN_RATING = 4.3
 MIN_REVIEWS = 30
 
-def get_repair_shops(search_query, zip_code):
-    url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={search_query}+repair+shop+near+{zip_code}&radius={SEARCH_RADIUS}&key={API_KEY}"
+def is_canadian_postal_code(location):
+    # Canadian postal codes are in the format A1A 1A1
+    pattern = re.compile(r'^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$')
+    return pattern.match(location) is not None
+
+def get_repair_shops(search_query, location):
+    url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={search_query}+repair+shop+near+{location}&radius={SEARCH_RADIUS}&key={API_KEY}"
     shops = []
 
     while url:
@@ -37,11 +43,11 @@ def get_repair_shops(search_query, zip_code):
 def shop_list(request):
     make = request.GET.get('make', '')  # Default to empty string if no make is provided
     category = request.GET.get('category', '')  # Default to empty string if no category is provided
-    zip_code = request.GET.get('zip_code', '')  # Default to empty string if no zip code is provided
+    location = request.GET.get('location', '')  # Default to empty string if no location is provided
     search_query = f"{make} {category}".strip()
     
     shops = []
-    if zip_code:  # Only fetch shops if zip_code is provided
-        shops = get_repair_shops(search_query, zip_code)
+    if location:  # Only fetch shops if location is provided
+        shops = get_repair_shops(search_query, location)
     
-    return render(request, 'shops/shop_list.html', {'shops': shops, 'make': make, 'category': category, 'zip_code': zip_code})
+    return render(request, 'shops/shop_list.html', {'shops': shops, 'make': make, 'category': category, 'location': location})
