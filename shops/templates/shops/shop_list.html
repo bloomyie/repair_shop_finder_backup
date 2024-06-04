@@ -5,24 +5,21 @@
 </head>
 <body>
     <h1>Repair Shops</h1>
-    <form method="get">
-        <label for="make">Make:</label>
-        <input type="text" id="make" name="make" value="{{ make }}">
-        <label for="category">Category:</label>
-        <input type="text" id="category" name="category" value="{{ category }}">
-        <label for="location">Location (ZIP Code or City):</label>
-        <input type="text" id="location" name="location" value="{{ location }}">
+    <form method="get" action=".">
+        Make: <input type="text" name="make" value="{{ make }}">
+        Category: <input type="text" name="category" value="{{ category }}">
+        Location (ZIP Code or City): <input type="text" name="location" value="{{ location }}">
         <button type="submit">Search</button>
     </form>
     <ul>
         {% for shop in shops %}
             <li>
-                <p><strong>{{ shop.name }}</strong></p>
-                <p>Address: {{ shop.formatted_address }}</p>
-                <p>Phone: {{ shop.phone_number }}</p>
-                <p>Website: <a href="{{ shop.website }}">{{ shop.website }}</a></p>
-                <p>Rating: {{ shop.rating }}</p>
-                <p>Total Reviews: {{ shop.user_ratings_total }}</p>
+                <strong>{{ shop.name }}</strong><br>
+                Address: {{ shop.formatted_address }}<br>
+                Phone: {{ shop.phone_number }}<br>
+                Website: <a href="{{ shop.website }}">{{ shop.website }}</a><br>
+                Rating: {{ shop.rating }}<br>
+                Total Reviews: {{ shop.user_ratings_total }}
             </li>
         {% endfor %}
     </ul>

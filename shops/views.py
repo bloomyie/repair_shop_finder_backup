@@ -2,13 +2,13 @@ from django.shortcuts import render
 import requests
 import time
 
-API_KEY = 'AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY'  # Your correct API key
+API_KEY = 'AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY'  # Ensure your correct API key is here
 SEARCH_RADIUS = 50 * 1609.34  # 50 miles to meters
 MIN_RATING = 4.3
 MIN_REVIEWS = 30
 
 def get_repair_shops(search_query, location):
-    url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={search_query}+repair+shop+near+{location}&radius={SEARCH_RADIUS}&key={API_KEY}"
+    url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={search_query}+repair+shop+in+{location}&radius={SEARCH_RADIUS}&key={API_KEY}"
     shops = []
 
     while url:
@@ -23,10 +23,8 @@ def get_repair_shops(search_query, location):
                 details_result = details_response.json().get('result', {})
                 phone_number = details_result.get('formatted_phone_number', 'N/A')
                 website = details_result.get('website', 'N/A')
-                address = details_result.get('formatted_address', 'N/A')
                 shop['phone_number'] = phone_number
                 shop['website'] = website
-                shop['address'] = address
                 shops.append(shop)
 
         url = None
@@ -39,11 +37,11 @@ def get_repair_shops(search_query, location):
 def shop_list(request):
     make = request.GET.get('make', '')  # Default to empty string if no make is provided
     category = request.GET.get('category', '')  # Default to empty string if no category is provided
-    location = request.GET.get('zip_code', '')  # Default to empty string if no location is provided
+    location = request.GET.get('location', '')  # Default to empty string if no location is provided
     search_query = f"{make} {category}".strip()
     
     shops = []
     if location:  # Only fetch shops if location is provided
         shops = get_repair_shops(search_query, location)
     
-    return render(request, 'shops/shop_list.html', {'shops': shops, 'make': make, 'category': category, 'zip_code': location})
+    return render(request, 'shops/shop_list.html', {'shops': shops, 'make': make, 'category': category, 'location': location})
