@@ -10,19 +10,19 @@
         <input type="text" id="make" name="make" value="{{ make }}">
         <label for="category">Category:</label>
         <input type="text" id="category" name="category" value="{{ category }}">
-        <label for="zip_code">Location (ZIP Code or City):</label>
-        <input type="text" id="zip_code" name="zip_code" value="{{ zip_code }}">
+        <label for="location">Location (ZIP Code or City):</label>
+        <input type="text" id="location" name="location" value="{{ location }}">
         <button type="submit">Search</button>
     </form>
     <ul>
         {% for shop in shops %}
             <li>
                 <p><strong>{{ shop.name }}</strong></p>
-                <p>{{ shop.rating }} stars</p>
-                <p>{{ shop.user_ratings_total }} reviews</p>
-                <p>{{ shop.phone_number }}</p>
-                <p>{{ shop.address }}</p>
-                <p><a href="{{ shop.website }}">{{ shop.website }}</a></p>
+                <p>Address: {{ shop.formatted_address }}</p>
+                <p>Phone: {{ shop.phone_number }}</p>
+                <p>Website: <a href="{{ shop.website }}">{{ shop.website }}</a></p>
+                <p>Rating: {{ shop.rating }}</p>
+                <p>Total Reviews: {{ shop.user_ratings_total }}</p>
             </li>
         {% endfor %}
     </ul>
