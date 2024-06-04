@@ -23,8 +23,10 @@ def get_repair_shops(search_query, location):
                 details_result = details_response.json().get('result', {})
                 phone_number = details_result.get('formatted_phone_number', 'N/A')
                 website = details_result.get('website', 'N/A')
+                reviews_link = f"https://search.google.com/local/reviews?placeid={place_id}"
                 shop['phone_number'] = phone_number
                 shop['website'] = website
+                shop['reviews_link'] = reviews_link
                 shops.append(shop)
 
         url = None

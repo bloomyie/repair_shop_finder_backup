@@ -19,7 +19,8 @@
                 Phone: {{ shop.phone_number }}<br>
                 Website: <a href="{{ shop.website }}">{{ shop.website }}</a><br>
                 Rating: {{ shop.rating }}<br>
-                Total Reviews: {{ shop.user_ratings_total }}
+                Total Reviews: {{ shop.user_ratings_total }}<br>
+                <a href="{{ shop.reviews_link }}">Read Reviews</a>
             </li>
         {% endfor %}
     </ul>
