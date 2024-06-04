@@ -2,21 +2,37 @@
 <html>
 <head>
     <title>Repair Shops</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Repair Shops</h1>
-    <form method="get">
+    <form method="GET">
         <label for="make">Make:</label>
         <input type="text" id="make" name="make" value="{{ make }}">
         <label for="category">Category:</label>
         <input type="text" id="category" name="category" value="{{ category }}">
         <label for="location">Location (ZIP Code or City):</label>
-        <input type="text" id="location" name="location" value="{{ location }}">
+        <input type="text" id="zip_code" name="zip_code" value="{{ zip_code }}">
         <button type="submit">Search</button>
     </form>
+
     <ul>
         {% for shop in shops %}
-            <li>{{ shop.name }} - {{ shop.rating }} stars - {{ shop.user_ratings_total }} reviews - {{ shop.phone_number }} - <a href="{{ shop.website }}">{{ shop.website }}</a></li>
+        <li>
+            <strong>{{ shop.name }}</strong><br>
+            Rating: {{ shop.rating }} stars<br>
+            Reviews: {{ shop.user_ratings_total }}<br>
+            Phone: {{ shop.phone_number }}<br>
+            Website: <a href="{{ shop.website }}" target="_blank">{{ shop.website }}</a><br>
+        </li>
         {% endfor %}
     </ul>
 </body>
