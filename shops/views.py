@@ -1,17 +1,11 @@
 from django.shortcuts import render
 import requests
 import time
-import re
 
 API_KEY = 'AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY'  # Ensure your correct API key is here
 SEARCH_RADIUS = 50 * 1609.34  # 50 miles to meters
 MIN_RATING = 4.3
 MIN_REVIEWS = 30
-
-def is_canadian_postal_code(location):
-    # Canadian postal codes are in the format A1A 1A1
-    pattern = re.compile(r'^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$')
-    return pattern.match(location) is not None
 
 def get_repair_shops(search_query, location):
     url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={search_query}+repair+shop+near+{location}&radius={SEARCH_RADIUS}&key={API_KEY}"
