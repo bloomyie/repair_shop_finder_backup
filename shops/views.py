@@ -23,8 +23,10 @@ def get_repair_shops(search_query, location):
                 details_result = details_response.json().get('result', {})
                 phone_number = details_result.get('formatted_phone_number', 'N/A')
                 website = details_result.get('website', 'N/A')
+                address = details_result.get('formatted_address', 'N/A')
                 shop['phone_number'] = phone_number
                 shop['website'] = website
+                shop['address'] = address
                 shops.append(shop)
 
         url = None
