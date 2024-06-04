@@ -1,22 +1,13 @@
 from django.shortcuts import render
 import requests
 import time
-import re
 
 API_KEY = 'AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY'  # Ensure your correct API key is here
 SEARCH_RADIUS = 50 * 1609.34  # 50 miles to meters
 MIN_RATING = 4.3
 MIN_REVIEWS = 30
 
-def is_valid_zip_or_postal_code(code):
-    # Regular expression for validating US ZIP code or Canadian postal code
-    pattern = re.compile(r'^\d{5}(-\d{4})?$|^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$')
-    return pattern.match(code)
-
 def get_repair_shops(search_query, zip_code):
-    if not is_valid_zip_or_postal_code(zip_code):
-        return []  # Return an empty list if the ZIP/postal code is invalid
-    
     url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={search_query}+repair+shop+near+{zip_code}&radius={SEARCH_RADIUS}&key={API_KEY}"
     shops = []
 
@@ -50,7 +41,7 @@ def shop_list(request):
     search_query = f"{make} {category}".strip()
     
     shops = []
-    if zip_code and is_valid_zip_or_postal_code(zip_code):  # Only fetch shops if zip_code is valid
+    if zip_code:  # Only fetch shops if zip_code is provided
         shops = get_repair_shops(search_query, zip_code)
     
     return render(request, 'shops/shop_list.html', {'shops': shops, 'make': make, 'category': category, 'zip_code': zip_code})
