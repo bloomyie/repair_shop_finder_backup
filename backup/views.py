@@ -2,7 +2,7 @@ from django.shortcuts import render
 import requests
 import time
 
-API_KEY = 'AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY'  # Your actual API key
+API_KEY = 'AIzaSyAzU7gIQjilPaew6gaOXAV7ngAZygf4KXY'  # Ensure your correct API key is here
 SEARCH_RADIUS = 50 * 1609.34  # 50 miles to meters
 MIN_RATING = 4.3
 MIN_REVIEWS = 30
