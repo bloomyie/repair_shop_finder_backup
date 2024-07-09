@@ -6,3 +6,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.shop_list, name='shop_list'),
 ]
+
